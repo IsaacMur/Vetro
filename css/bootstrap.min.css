@@ -18,7 +18,7 @@
     --bs-white: #fff;
     --bs-gray: #6c757d;
     --bs-gray-dark: #343a40;
-    --bs-primary: #5dade2;
+    --bs-primary: #2ea49d;
     --bs-secondary: #6610f2;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -3139,8 +3139,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #f74780;
-    border-color: #f74780
+    background-color: #2a948e;
+    border-color: #2a948e
 }
 
 .btn-primary:hover {
@@ -7367,7 +7367,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #f74780 !important
+    border-color: #2a948e !important
 }
 
 .border-secondary {
@@ -8344,7 +8344,7 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    color: #5dade2 !important
+    color: #2ea49d !important
 }
 
 .text-secondary {
