@@ -75,7 +75,6 @@
         </div>
          <!-- Navbar & Hero End -->
 
-
         <!-- Inicio de header -->
         <div class="hero-header overflow-hidden px-5">
             <div class="rotate-img">
@@ -84,9 +83,10 @@
             </div>
             <div class="row gy-5 align-items-center">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Grupo Vetro</h1>
-                    <p class="fs-2 mb-4 wow fadeInUp" data-wow-delay="0.5s">Más de 20 años de experiencia en insumos para construcción</p>
-                    <!-- <a href="#" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">Get Started</a> -->
+                    <h1 class="display-4 text-dark mb-4 wow fadeInUp" data-wow-delay="0.3s">Más de 20 años de experiencia en insumos para construcción</h1>
+                    <a href="https://wa.me/524775273183?text=¡Hola!%20Visité%20su%20página%20web%20y%20quiero%20más%20información%20sobre%20los%20productos%20y%20servicios%20de%20Grupo%20Vetro." target="_blank" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.7s">
+                        <i class="fab fa-whatsapp me-2"></i> Contáctanos
+                    </a>                                       
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
                     <img src="img/hero-img-1.png" class="img-fluid w-100 h-100" alt="">
@@ -95,34 +95,102 @@
         </div>
         <!-- Fin de header -->
 
-
         <!-- About Start -->
-        <div class="container-fluid overflow-hidden py-5"  style="margin-top: 6rem;">
+        <div class="container-fluid overflow-hidden py-5" style="margin-top: 3rem;"> <!-- Reduje el margin-top -->
             <div class="container py-5">
                 <div class="row g-5">
+                    <!-- Imagen a la izquierda en pantallas grandes, centrada en pantallas pequeñas -->
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="RotateMoveLeft">
                             <img src="img/vetro-negro.png" class="img-fluid w-100" alt="">
                         </div>
                     </div>
+                    <!-- Texto a la derecha, centrado en pantallas pequeñas -->
                     <div class="col-lg-6 wow fadeInUp align-items-center" data-wow-delay="0.3s">
-                        <h2 class="mb-1 text-primary">Quienes Somos</h4>
-                        <h3 class="display-5 mb-4">Nuestra Historia</h2>
-                        <p class="fs-5 mb-4">Desde nuestros inicios, hemos
-                            dedicado todos nuestros esfuerzos
-                            a proporcionar productos de
-                            primera calidad y un servicio al
-                            cliente excepcional.
-                            Nuestra misión es ser un aliado de
-                            confianza en cada proyecto de
-                            construcción.
+                        <h2 class="mb-1 text-primary">Quienes Somos</h2>
+                        <h3 class="display-5 mb-4">Nuestra Historia</h3>
+                        <p class="fs-5 mb-4">
+                            Desde nuestros inicios, hemos dedicado todos nuestros esfuerzos
+                            a proporcionar productos de primera calidad y un servicio al
+                            cliente excepcional. Nuestra misión es ser un aliado de
+                            confianza en cada proyecto de construcción.
                         </p>
-                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5">Saber más</a>
+                        <a href="about.html" class="btn btn-primary rounded-pill py-2 px-3">Saber más</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About End -->
+
+        <!-- Estilos CSS personalizados para la vista móvil -->
+        <style>
+            /* Ajustes para pantallas pequeñas (móviles) */
+            @media (max-width: 767px) {
+                /* Ajustar la imagen en el header para que sea completamente responsiva */
+                .hero-header .img-fluid {
+                    height: auto; /* Ajustar la altura de la imagen para que se ajuste mejor */
+                }
+
+                .hero-header .col-lg-6 {
+                    text-align: center; /* Centrar el contenido de la columna */
+                    padding: 1rem; /* Reducir padding para mejor ajuste */
+                }
+
+              /* Mejorar el tamaño de los títulos en móviles */
+                .hero-header h1 {
+                    font-size: 2rem; /* Ajustar tamaño de texto del título */
+                    margin-bottom: 0.5rem; /* Reducir el margen inferior si es necesario */
+                }
+
+                /* Ajuste de la columna para evitar espacio excesivo */
+                .hero-header .col-lg-6 {
+                    padding: 1rem; /* Reducir padding en dispositivos móviles */
+                }
+
+                .hero-header p {
+                    font-size: 1.2rem; /* Ajustar tamaño de párrafo */
+                }
+
+                /* Ajuste de la sección de "About" */
+                .about .col-lg-6 {
+                    text-align: center; /* Centrar el contenido del texto en pantallas pequeñas */
+                    padding: 1rem; /* Reducir el padding */
+                }
+
+                .about h3 {
+                    font-size: 1.8rem; /* Ajustar tamaño del título */
+                }
+
+                .about p {
+                    font-size: 1rem; /* Ajustar el tamaño de los párrafos */
+                    line-height: 1.5; /* Mejorar la legibilidad */
+                }
+
+                .about .btn {
+                    padding: 10px 20px; /* Ajustar tamaño del botón en móviles */
+                }
+
+                /* Reducir el margin-top en pantallas pequeñas */
+                .container-fluid.overflow-hidden {
+                    margin-top: 2rem; /* Ajuste en móviles */
+                }
+            }
+
+            /* Ajustes generales para la versión de escritorio */
+            @media (min-width: 768px) {
+                .hero-header .img-fluid {
+                    height: 100%; /* Hacer que la imagen ocupe todo el alto disponible */
+                }
+
+                .hero-header .col-lg-6 {
+                    text-align: left; /* Alinear el texto a la izquierda */
+                }
+
+                .about .col-lg-6 {
+                    text-align: left; /* Alinear el texto a la izquierda */
+                }
+            }
+        </style>
 
 
        <!-- Service Start -->
