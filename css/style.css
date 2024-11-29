@@ -873,14 +873,14 @@
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: var(--bs-primary);
+    color: var(--bs-dark);
 }
 
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
-    border-top: 1px solid #34b2ab;
+    border-top: 1px solid #feffff;
     background: #34b2ab !important;
 }
 /*** copyright end ***/
