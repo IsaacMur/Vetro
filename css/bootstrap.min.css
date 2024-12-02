@@ -5050,6 +5050,7 @@ fieldset:disabled .btn {
 /* Estilos para los botones del acordeón */
 .accordion-button {
     position: relative;
+    size: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;  /* Alinea el texto y el icono */
@@ -5073,6 +5074,7 @@ fieldset:disabled .btn {
     .accordion-button {
         transition: none;
     }
+    
 }
 
 /* Estilo cuando el acordeón está abierto (expandido) */
@@ -5081,6 +5083,7 @@ fieldset:disabled .btn {
     background-color: #2ea49d;  /* Color de fondo cuando está abierto */
     border-color:  #2ea49d; /* Cambiar color del borde cuando está abierto */
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    
     
 }
 
@@ -5094,11 +5097,13 @@ fieldset:disabled .btn {
     background-size: 1.25rem;
     background-position: center;
     transition: transform 0.2s ease-in-out;
+
 }
 
 /* Cuando el acordeón está abierto, rota el icono 180 grados */
 .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);  /* Rota el icono hacia abajo */
+    
 }
 
 
