@@ -318,7 +318,7 @@
     width: 600px;
     height: 600px;
     border-radius: 300px;
-    border: 80px solid rgb(52, 178, 171, 0.1);
+    border: 80px solid rgba(52, 178, 171, 0.102);
     background: transparent;
     animation: RotateMoveSingle 5s linear infinite;
     z-index: -1;
@@ -493,7 +493,7 @@
     width: 400px;
     height: 400px;
     border-radius: 200px;
-    border: 30px solid rgb(52, 178, 171, 0.1);
+    border: 30px solid rgba(52, 178, 171, 0.102);
     background: transparent;
     animation: RotateMoveHeader 5s linear infinite;
     z-index: -1;
