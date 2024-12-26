@@ -29,16 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Configuración del servidor SMTP
         $mail->SMTPDebug = SMTP::DEBUG_OFF; // Cambiar a DEBUG_OFF en producción
         $mail->isSMTP();
-        $mail->Host = 'mail.edgecloud.com.mx'; 
+        $mail->Host = 'mail.grupovetro.com.mx'; 
         $mail->SMTPAuth = true;
-        $mail->Username = 'contacto@edgecloud.com.mx'; 
-        $mail->Password = 'Operaciones1'; 
+        $mail->Username = 'contacto@grupovetro.com.mx'; 
+        $mail->Password = 'Operaciones1*'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port = 465;
 
         // Configuración del remitente y destinatario
-        $mail->setFrom('contacto@edgecloud.com.mx', 'EDGE & CLOUD');
-        $mail->addAddress('contacto@edgecloud.com.mx'); 
+        $mail->setFrom('contacto@grupovetro.com.mx', 'Grupo Vetro');
+        $mail->addAddress('contacto@grupovetro.com.mx'); 
 
         // Codificación en UTF-8
         $mail->CharSet = 'UTF-8';
